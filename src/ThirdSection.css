@@ -1,0 +1,140 @@
+.third-section {
+    margin: 5rem 10rem 5rem 10rem;
+    font-family: var(--primary-text-font);
+    font-size: var(--header-text-menu-font-size);
+    color: var(--text-color);
+    /* font-weight: var(--header-text-menu-font-weight); */
+}
+
+@media (max-width: 768px) {
+    .third-section {
+        margin: 2rem 2rem 2rem 2rem;
+    }
+}
+
+.third-section-wrapper {
+    gap: 20rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+@media (max-width: 768px) {
+    .third-section-wrapper {
+        flex-direction: column;
+        gap: 2rem;
+    }
+}
+
+.third-section-text-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+}
+
+.third-section-image-wrapper {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.third-section-image {
+    width: 80%;
+    height: auto;
+}
+
+.third-section-text-title {
+    font-size: var(--header-text-menu-font-size);
+    font-weight: var(--second-section-title-font-weight);
+    color: var(--primary-color);
+}
+
+.third-section-text-subtitle {
+    font-size: var(--second-section-subtitle-font-size);
+    color: var(--primarydark-color);
+    line-height: 1;
+    font-weight: bold;
+}
+
+.third-section-text-description {
+    font-size: var(--text-font-size);
+    line-height: 1.5;
+}
+
+.third-section-text-buttons-wrapper {
+    display: flex;
+    gap: 20px;
+}
+
+.third-section-demarquia-image {
+    height: 20px;
+    align-items: right;
+}
+
+.third-section-projects-wrapper {
+    width: 100%;
+    margin: 5rem 0rem 5rem 0rem;
+    display: flex;
+    gap: 30px;
+    justify-content: space-around;
+} @media (max-width: 768px) {
+    .third-section-projects-wrapper {
+        flex-direction: column;
+        gap: 2rem;
+    }
+}
+
+.third-section-demarquia-wrapper {
+    padding: 3rem;
+    display: flex;
+    border-radius: 15px;
+    border: 1px solid var(--primary-color);
+    flex-direction: column;
+    gap: 20px;
+}
+
+.third-section-curia-wrapper {
+    padding: 3rem;
+    display: flex;
+    border-radius: 15px;
+    border: 1px solid var(--primary-color);
+    flex-direction: column;
+    gap: 20px;
+}
+
+.third-section-demarquia-first-wrapper {
+    width: 100%;
+    justify-content: space-between;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+.third-section-demarquia-first-wrapper-text{
+    padding: 0.8rem;
+    border-radius: 25px;
+    background-color: var(--primary-color-opacity);
+    color: var(--primarydark-color);
+}
+
+.third-section-demarquia-image{
+    height: 100px;
+    align-items: right;
+}
+.third-section-demarquia-second-wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.third-section-demarquia-second-wrapper-text{
+    font-size: var(--third-section-projects-title-font-size);
+    font-weight: var(--third-section-projects-title-font-weight);
+    color: var(--titles-color);
+}
+
+.third-section-demarquia-third-wrapper{
+    font-size: var(--text-font-size);
+    color: var(--primary-color);
+    display: flex;
+    justify-content: space-between;
+}

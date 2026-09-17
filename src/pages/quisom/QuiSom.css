@@ -1,0 +1,25 @@
+.qui-som {
+  height: auto;
+  width: 100%;
+}
+.qui-som-content {
+  padding: 2rem 20rem 10rem 10rem;
+} @media (max-width: 768px) {
+  .qui-som-content {
+    padding: 2rem;
+  }
+}
+
+.qui-som-content-title{
+    font-size: var(--menu-content-title-font-size);
+    font-style: var(--secondary-text-font);
+    font-weight: bold;
+    color: var(--titles-color);
+}
+
+.qui-som-content-description{
+    font-size: var(--logo-principia-text);   
+    font-style: var(--primary-text-font);
+    font-weight: 300;
+    color: var(--text-color);
+}

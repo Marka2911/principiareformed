@@ -1,0 +1,124 @@
+.forth-section {
+    padding: 5rem 10rem 5rem 10rem;
+    font-family: var(--primary-text-font);
+    font-size: var(--header-text-menu-font-size);
+    color: var(--text-color);
+    background-color: var(--background-color);
+    /* font-weight: var(--header-text-menu-font-weight); */
+}
+
+@media (max-width: 768px) {
+    .forth-section {
+        padding: 2rem 2rem 2rem 2rem;
+    }
+}
+
+.forth-section-wrapper {
+    gap: 10rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+@media (max-width: 768px) {
+    .forth-section-wrapper {
+        flex-direction: column;
+        gap: 2rem;
+    }
+}
+
+.forth-section-text-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+}
+.forth-section-image-wrapper{
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+.forth-section-image-wrapper img {
+    width: 90%;
+    height: auto;
+}
+
+.forth-section-text-title {
+    font-size: var(--header-text-menu-font-size);
+    font-weight: var(--second-section-title-font-weight);
+    color: var(--primary-color);
+}
+
+.forth-section-text-subtitle {
+    font-size: var(--second-section-subtitle-font-size);
+    color: var(--primarydark-color);
+    line-height: 1;
+    font-weight: bold;
+}
+
+
+
+.forth-section-text-description {
+    font-size: var(--text-font-size);
+    line-height: 1.5;
+}
+
+.forth-section-text-buttons-wrapper {
+    display: flex;
+    gap: 20px;
+}
+
+.timeline {
+    position: relative;
+    padding-left: 25px;
+}
+
+/* Vertical line */
+.timeline::before {
+    content: "";
+    position: absolute;
+    left: 6px;
+    top: 8px;
+    bottom: 8px;
+    width: 2px;
+    background-color: var(--primary-color);
+}
+
+.timeline-item {
+    position: relative;
+    display: flex;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+/* Circle */
+.timeline-dot {
+    position: absolute;
+    left: -27px;
+    top: 3px;
+
+    width: 20px;
+    height: 20px;
+
+    background-color: var(--primary-color);
+    border-radius: 50%;
+}
+
+/* Text */
+.timeline-content {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.timeline-title {
+    color: var(--primary-color);
+    font-weight: 600;
+    font-size: var(--text-font-size);
+}
+
+.timeline-description {
+    color: var(--text-color);
+    font-size: 12px;
+    line-height: 1.4;
+}

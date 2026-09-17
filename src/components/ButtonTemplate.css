@@ -1,0 +1,13 @@
+.template-button {
+  background-color: var(--primary-color);
+  font-size: var(--text-font-size);
+  padding: 7px 20px;
+  border-radius: 6px;
+  border: none;
+  color: var(--background-color);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-family: var(--secondary-text-font);
+  gap: 15px;
+}

@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap");
+
+:root {
+  --primary-color: #1fb6b9;
+  --primary-color-opacity: rgba(31, 182, 185, 0.2);
+  --primarydark-color: #0b5560;
+  --background-color: #ffffff;
+  --surface-color: #f7fafa;
+  --titles-color: #0b5560;
+  --text-color: #4a7a7e;
+
+  --primary-text-font: "Inter", sans-serif;
+  --secondary-text-font: "Plus Jakarta Sans", sans-serif;
+
+  /* Responsive typography */
+
+  /* Menu */
+
+  /* 24px */
+  --menu-title-font-size: clamp(18px, 1.5vw, 48px);
+
+  /* 56px */
+  --menu-subtitle-font-size: clamp(32px, 3.2vw, 112px);
+
+  /* 18px */
+  --menu-description-font-size: clamp(14px, 1.1vw, 32px);
+  
+  /* 28px */
+  --menu-content-title-font-size: clamp(20px, 1.75vw, 48px);
+  /* Header */
+
+  /* 16px */
+  --logo-principia-text: clamp(14px, 1vw, 32px);
+
+  /* 12px */
+  --header-text-menu-font-size: clamp(11px, 0.8vw, 21px);
+
+  --header-text-menu-font-weight: 500;
+
+  /* Footer */
+
+  /* 21px */
+  --footer-title-font-size: clamp(17px, 1.3vw, 48px);
+
+  /* First section */
+
+  /* 18px */
+  --first-section-title-font-size: clamp(15px, 1.1vw, 48px);
+
+  --first-section-title-font-weight: bold;
+
+  /* 36px */
+  --first-section-subtitle-font-size: clamp(28px, 2.2vw, 112px);
+
+  /* Second section */
+
+  /* 32px */
+  --second-section-subtitle-font-size: clamp(26px, 2vw, 96px);
+
+  /* Third section */
+
+  /* 25px */
+  --third-section-projects-title-font-size: clamp(20px, 1.6vw, 48px);
+
+  --third-section-projects-title-font-weight: bold;
+
+  /* General text */
+
+  /* 14px */
+  --text-font-size: clamp(13px, 0.9vw, 32px);
+}
+
+body {
+  margin: 0;
+  font-family:
+    -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu",
+    "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family:
+    source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
