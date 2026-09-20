@@ -1,0 +1,42 @@
+.projectes-template{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 10rem 20rem 10rem 10rem;
+}
+
+.projectes-title{
+    font-size: var(--menu-title-font-size);
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+.projectes-subtitle{
+    font-size: var(--logo-principia-text);
+    color: var(--text-color)
+}
+.projectes-box{
+    border-radius: 15px;
+    display: flex;
+    background-color: var(--background-color);
+    padding: 1rem;
+}
+
+.box-title{
+    font-size: var(--footer-title-font-size);
+    color: var(--titles-color);
+    font-weight: 500;
+}
+
+.box-subtitle{
+    width: fit-content;
+    background-color: var(--surface-color);
+    padding: 5px;
+    border-radius: 15px;
+}
+
+.projectes-box-text-wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
