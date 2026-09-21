@@ -1,0 +1,43 @@
+.valors-template {
+  padding: 10rem 20rem 10rem 10rem;
+    height: 100%;
+}
+
+.valors-template-wrapper{
+    display: flex;
+    gap: 3rem;
+}
+
+.valors-template-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 2rem;
+}
+.valors-template-upper{
+    display: flex;
+    gap: 1rem;
+}
+.valors-template-text{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+.valors-template-video {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.valors-template-video iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+.valors-template-text-title{
+    font-size: var(--footer-title-font-size);
+    font-family: var(--secondary-text-font);
+    color: var(--titles-color);
+}

@@ -1,42 +1,172 @@
-.projectes-template{
-    display: flex;
+.projectes-template {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 10rem 20rem 5rem 10rem;
+}
+@media (max-width: 768px) {
+  .projectes-template {
+    padding: 2rem;
+  }
+}
+
+.projectes-title {
+  font-size: var(--menu-title-font-size);
+  color: var(--primary-color);
+  font-weight: bold;
+}
+
+.projectes-subtitle {
+  font-size: var(--logo-principia-text);
+  color: var(--text-color);
+}
+.projectes-box {
+  border: 2px solid var(--surface-color);
+  border-radius: 15px;
+  display: flex;
+  background-color: var(--background-color);
+  padding: 3rem;
+}
+@media (max-width: 768px) {
+  .projectes-box {
     flex-direction: column;
-    gap: 1rem;
-    padding: 10rem 20rem 10rem 10rem;
+    align-items: center;
+  }
+}
+.projectes-box-image-wrapper {
+  display: flex;
+  align-items: flex-start;
+  width: 20%;
 }
 
-.projectes-title{
-    font-size: var(--menu-title-font-size);
-    color: var(--primary-color);
-    font-weight: bold;
+.projectes-box-image-wrapper img {
+  width: 100%;
+  object-fit: contain;
 }
 
-.projectes-subtitle{
-    font-size: var(--logo-principia-text);
-    color: var(--text-color)
-}
-.projectes-box{
-    border-radius: 15px;
-    display: flex;
-    background-color: var(--background-color);
-    padding: 1rem;
+.box-title {
+  font-size: var(--footer-title-font-size);
+  color: var(--titles-color);
+  font-weight: bold;
 }
 
-.box-title{
-    font-size: var(--footer-title-font-size);
-    color: var(--titles-color);
-    font-weight: 500;
+.box-subtitle {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: var(--text-font-size);
+  font-style: var(--primary-text-font);
+  color: var(--titles-color);
+  font-weight: 500;
+  width: fit-content;
+  background-color: var(--surface-color);
+  padding: 5px;
+  border-radius: 15px;
 }
 
-.box-subtitle{
-    width: fit-content;
-    background-color: var(--surface-color);
-    padding: 5px;
-    border-radius: 15px;
+.projectes-box-text-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
 
-.projectes-box-text-wrapper{
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
+.box-description {
+  font-size: var(--logo-prinicia-text);
+  font-family: var(--primary-text-font);
+  color: var(--text-color);
+  font-weight: 300;
+}
+
+.box-que-faras {
+  font-size: var(--logo-prinicia-text);
+  font-family: var(--secondary-text-font);
+  color: var(--titles-color);
+  font-weight: bold;
+}
+
+.box-to-do-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding-left: 1rem;
+}
+
+.box-to-do-text {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.box-to-do-title {
+  color: var(--titles-color);
+  font-style: var(--secondary-text-font);
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.box-to-do-description {
+  font-size: var(--logo-prinicia-text);
+  font-family: var(--primary-text-font);
+  color: var(--text-color);
+}
+
+.box-to-do-icon {
+  color: var(--primary-color);
+}
+
+
+.box-button-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.box-button-left-wrapper {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+.box-button-left {
+  height: 100%;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--surface-color);
+  border: 0px;
+  border-radius: 10px;
+  gap: 0.75rem;
+}
+
+.box-button-left-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  color: var(--primary-color);
+  font-size: var(--first-section-title-font-size);
+}
+
+.box-button-left-text {
+  gap: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: start;
+  width: 100%;
+}
+
+.box-butotn-left-text-title {
+  font-style: var(--secondary-text-font);
+  font-size: var(--text-font-size);
+  color: var(--titles-color);
+  font-weight: bold;
+}
+
+.box-button-left-text-subtitle {
+  font-style: var(--primary-text-font);
+  font-size: var(--text-font-size);
+  color: var(--titles-color);
+  font-weight: 500;
 }

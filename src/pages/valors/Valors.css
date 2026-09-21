@@ -2,3 +2,31 @@
   height: auto;
   width: 100%;
 }
+
+.valors-section-2 {
+  background-color: var(--primarydark-color);
+  padding: 10rem 20rem 10rem 10rem;
+  display: flex;
+  gap: 25rem;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.valors-section-2-info {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.valors-info-title{
+  font-family: var(--secondary-text-font);
+  font-size: var(--menu-content-title-font-size);
+  font-weight: bold;
+  color: var(--background-color);
+}
+
+.valors-info-subtitle{
+  font-family: var(--primarydark-color);
+  font-size: var(--logo-principia-text);
+  color: var(--background-color);
+}

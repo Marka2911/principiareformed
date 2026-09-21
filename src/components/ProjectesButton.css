@@ -1,0 +1,16 @@
+.projectes-button-wrapper {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+.projectes-button-buttons {
+  border: 0px;
+  color: var(--background-color);
+  font-size: var(--text-font-size);
+  font-weight: bold;
+  font-family: var(--secondary-text-font);
+  padding: 1.25rem;
+  border-radius: 10px;
+  white-space: nowrap;
+}
