@@ -1,0 +1,80 @@
+.entitats-template-wrapper {
+  background-color: var(--background-color);
+  flex-direction: column;
+  justify-content: space-around;
+  display: flex;
+  padding: 3rem;
+  border-radius: 15px;
+  height: 30vw;
+  max-width: 27vw;
+}
+
+.entitats-template-images {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.entitats-template-images img {
+  max-width: 50%;
+}
+
+.entitats-template-info {
+  display: flex;
+  gap: 1.25rem;
+  flex-direction: column;
+}
+
+.entitats-template-title {
+  font-family: var(--secondary-text-font);
+  font-weight: bold;
+  font-size: var(--footer-title-font-size);
+  color: var(--titles-color);
+  text-align: center;
+}
+.entitats-template-subtitle {
+  font-family: var(--primary-text-font);
+  font-size: var(--text-font-size);
+  color: var(--primary-color);
+  text-align: center;
+}
+.entitats-template-description {
+  font-family: var(--primary-text-font);
+  font-size: var(--text-font-size);
+  color: var(--text-color);
+  text-align: justify;
+}
+.left {
+  text-align: left;
+}
+
+.entitats-template-button {
+  display: flex;
+  justify-content: center;
+}
+@media (max-width: 768px) {
+  .entitats-template-images {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .entitats-template-images img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    object-fit: contain;
+  }
+
+.entitats-template-wrapper {
+  background-color: var(--background-color);
+  flex-direction: column;
+  justify-content: space-around;
+  display: flex;
+  padding: 3rem;
+  border-radius: 15px;
+  height: 100%;
+  max-width: 100%;
+}
+
+}

@@ -27,12 +27,7 @@
   background-color: var(--background-color);
   padding: 3rem;
 }
-@media (max-width: 768px) {
-  .projectes-box {
-    flex-direction: column;
-    align-items: center;
-  }
-}
+
 .projectes-box-image-wrapper {
   display: flex;
   align-items: flex-start;
@@ -169,4 +164,20 @@
   font-size: var(--text-font-size);
   color: var(--titles-color);
   font-weight: 500;
+}
+@media (max-width: 768px) {
+  .projectes-box {
+    flex-direction: column;
+    align-items: center;
+  }
+  .box-to-do-text{
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .box-button-wrapper{
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+  }
 }

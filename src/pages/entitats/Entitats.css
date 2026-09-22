@@ -1,0 +1,15 @@
+.entitats-wrapper {
+    background-color: var(--surface-color);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10rem 20rem 15rem 10rem;
+    gap: 5rem;
+}
+@media (max-width: 768px) {
+  .entitats-wrapper {
+    padding: 0rem;
+    flex-direction: column;
+    width: 100%;
+  }
+}

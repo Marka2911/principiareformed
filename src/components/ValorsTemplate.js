@@ -1,7 +1,7 @@
 import ButtonTemplate from "./ButtonTemplate";
 import Line from "./Line"
 import "./ValorsTemplate.css"
-const ValorsTemplate = ({ valorsLogo, valorsTitle, valorsDescription }) => {
+const ValorsTemplate = ({ valorsLogo, valorsTitle, valorsDescription, background }) => {
   return (
     <div className="valors-template">
       <div className="valors-template-wrapper">

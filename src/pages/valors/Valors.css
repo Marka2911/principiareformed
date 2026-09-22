@@ -11,21 +11,26 @@
   justify-content: space-between;
   align-items: flex-start;
 }
-
+@media (max-width: 768px) {
+  .valors-section-2 {
+    padding: 2rem;
+    gap: 0rem;
+  }
+}
 .valors-section-2-info {
   display: flex;
   flex-direction: column;
   gap: 1rem;
 }
 
-.valors-info-title{
+.valors-info-title {
   font-family: var(--secondary-text-font);
   font-size: var(--menu-content-title-font-size);
   font-weight: bold;
   color: var(--background-color);
 }
 
-.valors-info-subtitle{
+.valors-info-subtitle {
   font-family: var(--primarydark-color);
   font-size: var(--logo-principia-text);
   color: var(--background-color);

@@ -1,12 +1,21 @@
 .valors-template {
-  padding: 10rem 20rem 10rem 10rem;
+  padding: 5rem 20rem 0rem 10rem;
     height: 100%;
+} @media (max-width: 768px) {
+    .valors-template{
+        padding: 2rem
+    }
+    
+    .valors-template-wrapper{
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 .valors-template-wrapper{
     display: flex;
     gap: 3rem;
-}
+} 
 
 .valors-template-info{
     display: flex;
@@ -40,4 +49,16 @@
     font-size: var(--footer-title-font-size);
     font-family: var(--secondary-text-font);
     color: var(--titles-color);
+    font-weight: bold;
+}
+
+.valors-template-logo{
+    font-size: var(--footer-title-font-size);
+    color: var(--titles-color);
+}
+
+.valors-template-text-description{
+    font-size: var(--logo-principia-text);
+    font-family: var(--primary-text-font);
+    color: var(--text-color);
 }
