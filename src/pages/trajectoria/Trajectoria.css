@@ -1,0 +1,104 @@
+.trajectoria-wrapper {
+  padding: 0rem 20rem 15rem 10rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+} @media (max-width: 768px) {
+    .trajectoria-wrapper{
+        padding: 2rem;
+    }
+}
+
+.trajectoria-title {
+  font-size: var(--menu-content-title-font-size);
+  font-weight: bold;
+  color: var(--titles-color);
+  font-family: var(--secondary-text-font);
+}
+
+.trajectoria-line-wrapper {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.trajectoria-info {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+  /* Important so content takes remaining space */
+  flex: 1;
+}
+
+/* VERTICAL LINE */
+.trajectoria-line {
+  width: 1px;
+  background-color: var(--primary-color);
+  position: relative;
+  flex-shrink: 0;
+}
+
+/* FIRST DOT - PRINCIPIA */
+.trajectoria-dot {
+  width: 12px;
+  height: 12px;
+
+  background-color: var(--primary-color);
+  border-radius: 50%;
+
+  position: absolute;
+
+  top: 0;
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+}
+
+/* TITLES */
+.trajectoria-wrapper-title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+/* Needed to position the Demarquia dot */
+.trajectoria-section-dot {
+  position: relative;
+}
+
+/* SECOND DOT - DEMARQUIA */
+.trajectoria-dot-secondary {
+  width: 12px;
+  height: 12px;
+
+  background-color: var(--primary-color);
+  border-radius: 50%;
+
+  position: absolute;
+
+  /* 1.5rem = gap between line and content */
+  left: -1.5rem;
+  top: 50%;
+
+  transform: translate(-50%, -50%);
+}
+
+.trajectoria-title-style {
+  font-size: var(--footer-title-font-size);
+  font-weight: bold;
+  color: var(--titles-color);
+  font-family: var(--secondary-text-font);
+}
+
+.trajectoria-see-more {
+  font-size: var(--logo-principia-text);
+  font-family: var(--secondary-text-font);
+  color: var(--primary-color);
+}
+
+.trajectoria-subtitle {
+  font-size: var(--logo-principia-text);
+  font-family: var(--primary-text-font);
+  color: var(--text-color);
+}

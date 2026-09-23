@@ -1,0 +1,37 @@
+.trajectoria-template-wrapper {
+  background-color: var(--surface-color);
+  border-radius: 15px;
+  display: flex;
+  gap: 2rem;
+  padding: 1rem;
+  align-items: center;
+}
+.trajectoria-template-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.trajectoria-template-title {
+  font-family: var(--secondary-text-font);
+  font-weight: bold;
+  color: var(--titles-color);
+  font-size: var(--logo-principia-text);
+}
+
+.trajectoria-template-description {
+  font-family: var(--primary-text-fon);
+  color: var(--text-color);
+  font-size: var(--logo-principia-text);
+}
+
+
+@media (max-width:768px) {
+    .trajectoria-template-wrapper{
+        display: flex;
+        flex-direction: column;
+    }
+    .trajectoria-template-img img{
+        width: 100%;
+        
+    } 
+}
