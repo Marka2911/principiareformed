@@ -1,6 +1,5 @@
 import ProjectesButton from "./ProjectesButton";
 import "./TrajectoriaTemplate.css"
-
 const TrajectoriaTemplate = ({title, description, img}) => {
     return ( <div className="trajectoria-template">
         <div className="trajectoria-template-wrapper">

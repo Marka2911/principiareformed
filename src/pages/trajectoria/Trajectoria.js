@@ -1,10 +1,12 @@
 import MenuTitle from "../../components/MenuTitle";
 import ProjectesButton from "../../components/ProjectesButton";
 import TrajectoriaTemplate from "../../components/TrajectoriaTemplate";
+import TrajectoriaInclouInfo from "../../components/TrajectoriaInclouInfo";
 import motivacio from "../../assets/motivacio.png";
 import intro from "../../assets/intro.png";
 import "./Trajectoria.css";
-
+import LlibreComponent from "../../components/LlibreComponent";
+import { FaCheck } from "react-icons/fa";
 function Trajectoria() {
   return (
     <div className="trajectoria">
@@ -26,14 +28,12 @@ function Trajectoria() {
         <div className="trajectoria-title">Trajectoria</div>
 
         <div className="trajectoria-line-wrapper">
-
           {/* VERTICAL LINE + FIRST DOT */}
           <div className="trajectoria-line">
             <div className="trajectoria-dot"></div>
           </div>
 
           <div className="trajectoria-info">
-
             {/* PRINCIPIA */}
             <div className="trajectoria-wrapper-title">
               <div className="trajectoria-title-style">Principia</div>
@@ -80,7 +80,77 @@ function Trajectoria() {
               description="Entén desde un inci com s’inicia un projecte com Principia, desde la base ideològica a la construcció d’un projecte viable."
               img={intro}
             />
-
+          </div>
+        </div>
+      </div>
+      <div className="publicacions-wrapper">
+        <div className="publicacions-wrapper-title">
+          <div className="trajectoria-title">Publicacions públiques</div>
+          <div className="trajectoria-subtitle">Últimes publicacions</div>
+        </div>
+        <div className="publicacions-wrapper-llibres">
+          <div className="publicacions-llibres">
+            <div className="publicacions-wrapper-llista-llibres">
+              <LlibreComponent
+                title="Llibre 1: Principia"
+                subtitle="Pau Cereijo — 2026"
+                description="Un recull de mètodes i d’explicacions sobre la creació de Principia, desde la idea i concepte fins a la constitució formal de la cooperativa"
+              />
+              <LlibreComponent
+                title="Llibre 1: Principia"
+                subtitle="Pau Cereijo — 2026"
+                description="Un recull de mètodes i d’explicacions sobre la creació de Principia, desde la idea i concepte fins a la constitució formal de la cooperativa"
+              />
+            </div>
+            <div className="publicacions-wrapper-llista-llibres">
+              <LlibreComponent
+                title="Llibre 1: Principia"
+                subtitle="Pau Cereijo — 2026"
+                description="Un recull de mètodes i d’explicacions sobre la creació de Principia, desde la idea i concepte fins a la constitució formal de la cooperativa"
+              />
+              <LlibreComponent
+                title="Llibre 1: Principia"
+                subtitle="Pau Cereijo — 2026"
+                description="Un recull de mètodes i d’explicacions sobre la creació de Principia, desde la idea i concepte fins a la constitució formal de la cooperativa"
+              />
+            </div>
+          </div>
+          <div className="publicaions-wrapper-llibres-publicacions">
+            <div className="publicaions-img-wrapper">
+              <img src={motivacio}></img>
+            </div>
+            <div className="publicacions-all-info-wrapper">
+              <div className="publicacions-title">
+                Reflexions: Una Utopia o un possible futur?
+              </div>
+              <div className="publicacions-description">
+                Un llibre que recull les reflexions durant la construcció de les
+                eines, processos i experiències de Principia per construir
+                institucions participatives i sostenibles.
+              </div>
+              <div className="publicacions-price">28,00 €</div>
+              <ProjectesButton
+                text={"Comprar llibre"}
+                firstBg={"var(--primary-color)"}
+                secondBg={"transparent"}
+                secondText={"Vista prèvia"}
+                secondTextColor={"var(--primarydark-color)"}
+                border={"1px solid var(--primarydark-color)"}
+              />
+              <div className="publicacions-description">Inclou:</div>
+              <TrajectoriaInclouInfo
+                icon={<FaCheck />}
+                text="Capítols sobre participació, transparència i tecnologia cívica"
+              />
+              <TrajectoriaInclouInfo
+                icon={<FaCheck />}
+                text="Reflexions que han portat a realitzar aquest camí"
+              />
+              <TrajectoriaInclouInfo
+                icon={<FaCheck />}
+                text="Entendre com s’ha arribat fins aquí"
+              />
+            </div>
           </div>
         </div>
       </div>
