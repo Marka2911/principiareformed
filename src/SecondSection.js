@@ -1,5 +1,6 @@
 import "./SecondSection.css";
 import logo from "./assets/frame_22.png";
+import { Link } from "react-router-dom";
 function SecondSection() {
   return (
     <div className="second-section">
@@ -16,7 +17,7 @@ function SecondSection() {
             defensar: justícia social, transparència, inclusió, sostenibilitat,
             compromís comunitari…
           </div>
-          <div className="second-section-text-title">Coneix-nos a fons → </div>
+          <Link key="qui-som" to="/qui-som" className="second-section-text-title">Coneix-nos a fons → </Link>
         </div>
         <div className="second-section-image-wrapper">
           <img

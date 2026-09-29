@@ -122,7 +122,6 @@
 
 .publicacions-wrapper-llibres {
   display: flex;
-  flex-direction: column;
   gap: 2rem;
 }
 
@@ -166,5 +165,9 @@
 @media (max-width: 768px) {
   .publicacions-wrapper {
     padding: 2rem;
+  }
+  .publicacions-wrapper-llibres{
+    display: flex;
+    flex-direction: column;
   }
 }

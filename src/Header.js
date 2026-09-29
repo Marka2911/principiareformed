@@ -20,13 +20,11 @@ function Header() {
     <header className="header">
       <div className="header-wrapper">
         {/* LOGO */}
-        <div className="header-section-wrapper">
+        <Link className="header-section-wrapper" key="home" to="/">
           <img src={logo} alt="Principia Logo" className="header-image" />
 
-          <Link className="header-text-title" key="home" to="/">
-            Principia
-          </Link>
-        </div>
+          <div className="header-text-title">Principia</div>
+        </Link>
 
         {/* DESKTOP MENU */}
         <nav className="header-section-wrapper-menu">
@@ -42,13 +40,13 @@ function Header() {
         </nav>
 
         {/* DESKTOP ACTIONS */}
-        <div className="header-actions">
+        <Link key="errorpage" to="/errorpage" className="header-actions" >
           <div>Inicia sessió</div>
 
           <button className="header-button-register">Registra't</button>
 
           <button className="header-button-language">CAT</button>
-        </div>
+        </Link>
 
         {/* MOBILE HAMBURGER */}
         <button
@@ -78,13 +76,14 @@ function Header() {
 
         <div className="mobile-menu-divider"></div>
 
-        <div className="mobile-menu-item" onClick={() => setMenuOpen(false)}>
-          Inicia sessió
-        </div>
-
-        <button className="header-button-register">Registra't</button>
-
-        <button className="header-button-language">CAT</button>
+        <Link key="errorpage" to="/errorpage"> 
+          {" "}
+          <div className="mobile-menu-item" onClick={() => setMenuOpen(false)}>
+            Inicia sessió
+          </div>
+          <button className="header-button-register">Registra't</button>
+          <button className="header-button-language">CAT</button>
+        </Link>
       </nav>
     </header>
   );

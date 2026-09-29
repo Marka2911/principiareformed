@@ -10,6 +10,7 @@ import { BsFillBuildingsFill } from "react-icons/bs";
 import { FaHeadSideVirus } from "react-icons/fa";
 import { FaTractor } from "react-icons/fa";
 import { FaPeopleRoof } from "react-icons/fa6";
+import { Link } from "react-router-dom";
 
 function Valors() {
   return (
@@ -30,9 +31,9 @@ function Valors() {
             d'incorporar altres valors, o si algun està mal formulat, estarem
             encantats d'escoltar i integrar la teva opinió.
           </div>
-          <div className="valors-info-button">
+          <Link key={"contacte"} to="/contacte" className="valors-info-button">
             <ButtonLightBlue text={"Escriu un suggeriment"} />
-          </div>
+          </Link>
         </div>
         <div className="valors-section-2-button">
           <ButtonLightBlue

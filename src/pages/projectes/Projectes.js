@@ -38,12 +38,17 @@ function Projectes() {
         boxWhatToDoThird={
           "— Diferents tipus de votacions internes per saber què opinen els teus treballadors, estudiants…"
         }
-        boxButtonIcon={<FiDownload/>}
+        boxButtonIcon={<FiDownload />}
         boxButtonTitle="Instal·la't la app"
         boxButtonDescription={"Comença ara a utilitzar Demarquia"}
-        boxOtherButtonIcon={<MdArrowOutward/>}
+        boxOtherButtonIcon={<MdArrowOutward />}
         boxOtherButtonTitle={"Obrir Online"}
         boxOtherButtonDescription={"Comença ara a utilitzar Demarquia"}
+        // boxDetailText={
+        //   "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lobortis hendrerit tortor. Nam sit amet vehicula dolor, eu interdum odio. Vivamus in condimentum purus. Aenean orci ipsum, vestibulum sed nisi fringilla, varius hendrerit lacus. Duis non urna eget elit euismod ultrices ac in odio. Vivamus viverra ante quis commodo luctus. Pellentesque pulvinar dui in dolor sollicitudin consequat. Vestibulum sapien nisl, consectetur id augue nec, volutpat pulvinar nulla. Ut varius ante ut enim facilisis, sed mattis ante fringilla. Sed consectetur, sapien ac hendrerit viverra, odio tellus faucibus lacus, eu imperdiet ex tellus sit amet sem. Quisque nec faucibus diam. Etiam eros tortor, blandit in purus eget, bibendum consequat lacus."
+       
+        // }
+        
       />
       <ProjectesTemplate
         backgroundColor="var(--background-color)"
@@ -68,7 +73,9 @@ function Projectes() {
         boxWhatToDoThird={
           "— Descobreix quines empreses del teu entorn treballen pel canvi social."
         }
-        boxNotFunciontingButtonText={"Vull ser notificat quan estigui disponible"}
+        boxNotFunciontingButtonText={
+          "Vull ser notificat quan estigui disponible"
+        }
         boxNotFunciontingButtonBackground={"--var(background-color)"}
       />
     </div>

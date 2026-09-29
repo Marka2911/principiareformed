@@ -26,6 +26,7 @@
   display: flex;
   font-weight: bold;
   align-items: center;
+  text-decoration: none;
 }
 .footer-logo-section-description {
   font-family: var(--primary-text-font);
@@ -53,6 +54,7 @@
 }
 
 .footer-section-text {
+  text-decoration: none;
   font-family: var(--primary-text-font);
   font-size: var(--text-font-size);
   color: var(--surface-color);
@@ -63,4 +65,8 @@
     justify-content: center;
     align-items: center;
     padding: 2rem;
+}
+
+Link{
+  text-decoration: none;
 }

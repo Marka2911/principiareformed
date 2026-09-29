@@ -25,6 +25,12 @@
 
 .publicacions-llibres {
   display: flex;
-  flex-direction: column;
   gap: 2rem;
+}
+
+@media (max-width: 768px){
+  .publicacions-llibres{
+    display: flex;
+    flex-direction: column;
+  }
 }

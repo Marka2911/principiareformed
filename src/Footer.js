@@ -2,18 +2,19 @@ import logo_principia from "./assets/logo_principia_white.png";
 import { FiHeart } from "react-icons/fi";
 import ButtonTemplate from "./components/ButtonTemplate.js";
 import "./Footer.css";
+import { Link } from "react-router-dom";
 function Footer() {
   return (
     <footer className="footer">
       <div className="footer-wrapper">
         <div className="footer-information">
           <div className="footer-logo-section">
-            <div className="footer-logo-section-title">
+            <Link key="home" to="/" className="footer-logo-section-title">
               <div className="footer-logo-section-title-logo">
                 <img src={logo_principia} alt="Principia Logo" />
               </div>
               <div className="footer-logo-section-title-text">Principia</div>
-            </div>
+            </Link>
             <div className="footer-logo-section-description">
               Donant veu a allò que tothom sent.
             </div>
@@ -24,15 +25,43 @@ function Footer() {
           <div className="footer-info-section">
             <div className="footer-section-title">ENLLAÇOS</div>
             <div className="footer-links-section-links">
-              <div className="footer-section-text">Qui som?</div>
-              <div className="footer-section-text">Projectes</div>
-              <div className="footer-section-text">Els nostres valors</div>
-              <div className="footer-section-text">Trajectòria</div>
-              <div className="footer-section-text">Equip impulsor</div>
-              <div className="footer-section-text">
+              <Link className="footer-section-text" key="qui-som" to="/qui-som">
+                Qui som?
+              </Link>
+              <Link
+                className="footer-section-text"
+                key="projectes"
+                to="/projectes"
+              >
+                Projectes
+              </Link>
+              <Link className="footer-section-text" key="valors" to="/valors">
+                Els nostres valors
+              </Link>
+              <Link
+                className="footer-section-text"
+                key="trajectoria"
+                to="/trajectoria"
+              >
+                Trajectòria
+              </Link>
+              <Link className="footer-section-text" key="equip" to="/equip">
+                Equip impulsor
+              </Link>
+              <Link
+                className="footer-section-text"
+                key="entitats"
+                to="/entitats"
+              >
                 Entitats col·laboradores
-              </div>
-              <div className="footer-section-text">Contacte</div>
+              </Link>
+              <Link
+                className="footer-section-text"
+                key="contacte"
+                to="contacte"
+              >
+                Contacte
+              </Link>
             </div>
           </div>
           <div className="footer-info-section">

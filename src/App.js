@@ -10,6 +10,7 @@ import Main from "./Main.js";
 import Header from "./Header";
 import Footer from "./Footer";
 import Projectes from "./pages/projectes/Projectes.js";
+import ErrorPage from "./pages/errorpage/ErrorPage.js";
 function App() {
     return (
         <BrowserRouter>
@@ -24,6 +25,7 @@ function App() {
                     <Route path="/equip" element={<EquipImpulsor />} />
                     <Route path="/entitats" element={<Entitats />} />
                     <Route path="/contacte" element={<Contacte />} />
+                    <Route path="/errorpage" element={<ErrorPage />} />
                 </Routes>
                 <Footer/>
             </div>

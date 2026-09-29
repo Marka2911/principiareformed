@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "./SeventhSection.css";
 import valor1 from "./assets/valor_1.png";
 import valor2 from "./assets/valor_2.png";
@@ -64,9 +65,9 @@ function SeventhSection() {
             Ens definim a partir de set grans conceptes que interpretem com els
             fonaments dels nostres valors:
           </div>
-          <div className="seventh-section-text-title">
+          <Link key="valors" to="/valors" className="seventh-section-text-title">
             Aprofundeix en els nostres valors →
-          </div>
+          </Link>
         </div>
         <div className="seventh-section-valors-wrapper">
           {valors.map((valor) => (

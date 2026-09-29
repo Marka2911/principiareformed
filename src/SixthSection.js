@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "./SixthSection.css";
 import logo_35 from "./assets/logo_35.png";
 import logo_36 from "./assets/logo_36.png";
@@ -29,9 +30,9 @@ function SixthSection() {
             <img src={logo_39} alt=""/>
             <img src={logo_40} alt=""/>
           </div>
-          <div className="second-section-text-title">
+          <Link key="entitats" to="/entitats" className="second-section-text-title">
             Veure totes les entitats →
-          </div>
+          </Link>
         </div>
       </div>
     </div>

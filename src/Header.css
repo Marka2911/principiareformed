@@ -22,6 +22,7 @@
   justify-content: center;
   gap: 20px;
   width: 20%;
+  text-decoration: none;
 }
 
 .header-section-wrapper-menu {
@@ -42,6 +43,7 @@
   justify-content: center;
   gap: 20px;
   width: 30%;
+  text-decoration: none;
 }
 
 .header-text-title {

@@ -2,6 +2,7 @@ import './ThirdSection.css';
 import logo from './assets/frame_44.png';
 import logoDemarquia from './assets/logo_demarquia.png';
 import logoCuria from './assets/logo_curia.png';
+import { Link } from 'react-router-dom';
 function ThirdSection() {
     return (<div className="third-section">
         <div className="third-section-wrapper">
@@ -37,9 +38,9 @@ function ThirdSection() {
                     </div>
                 </div>
                 <div className="third-section-demarquia-third-wrapper">
-                    <div>
+                    <Link key="projectes" to="projectes">
                         Saber més →
-                    </div>
+                    </Link>
                     <div>
                         ↗ Obrir Online
                     </div>
@@ -61,9 +62,9 @@ function ThirdSection() {
                     </div>
                 </div>
                 <div className="third-section-demarquia-third-wrapper">
-                    <div>
+                    <Link key="projectes" to="projectes">
                         Saber més →
-                    </div>
+                    </Link>
                     <div>
                         ↗ Obrir Online
                     </div>
@@ -71,9 +72,9 @@ function ThirdSection() {
             </div>
         </div>
         <div className="third-section-footer">
-            <div>
+            <Link key="projectes" to="/projectes">
                 Veure tots els projectes →
-            </div>
+            </Link>
         </div>
     </div>);
 }

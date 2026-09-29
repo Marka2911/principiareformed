@@ -2,6 +2,7 @@ import "./FifthSection.css";
 import Pau from "./assets/imatge_pau.png";
 import Marc from "./assets/imatge_marc.png";
 import Laia from "./assets/imatge_laia.png";
+import { Link } from "react-router-dom";
 const teamMembers = [
   {
     image: Pau,
@@ -66,7 +67,7 @@ function FifthSection() {
           ))}
         </div>
         <div className="third-section-footer">
-          <div>Coneix l'equip complet →</div>
+          <Link key={"equip"} to="/equip">Coneix l'equip complet →</Link>
         </div>
       </div>
     </div>

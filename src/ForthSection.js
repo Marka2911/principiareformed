@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "./ForthSection.css";
 import Timeline from "./Timeline.js";
 function ForthSection() {
@@ -17,9 +18,9 @@ function ForthSection() {
             actua, estem preparats per assumir nosaltres mateixos les tasques
             que calen per construir un model més just i participatiu.
           </div>
-          <div className="forth-section-text-title">
+          <Link key="trajectoria" to="/trajectoria" className="forth-section-text-title">
             Veure la trajectòria completa →
-          </div>
+          </Link>
         </div>
         <div className="forth-section-timeline-wrapper">
           <Timeline />

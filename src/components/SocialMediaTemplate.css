@@ -1,0 +1,30 @@
+.social-media-template {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.sm-title {
+  font-size: var(--header-text-menu-font-size);
+  font-weight: var(--second-section-title-font-weight);
+  color: var(--titles-color);
+}
+.sm-text-name{
+    display: flex;
+    flex-direction: column;
+    gap: -10px;
+}
+
+.sm-button-open-style{
+    background-color: var(--primarydark-color);
+    border: 0px;
+    padding: 0.2rem 1rem 0.2rem 1rem;
+    border-radius: 15px;
+    color: var(--background-color);
+}
+
+.contacte-email-title-small-icon {
+  font-size: var(--menu-content-title-font-size);
+  font-weight: var(--third-section-projects-title-font-weight);
+  color: var(--titles-color);
+}
