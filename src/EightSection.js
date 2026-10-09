@@ -1,3 +1,4 @@
+import { useState } from "react";
 import "./EightSection.css";
 import logo1 from "./assets/mail.png";
 import logo2 from "./assets/insta.png";
@@ -13,26 +14,41 @@ const valors = [
   {
     logo: logo2,
     title: "INSTAGRAM",
+    url: "https://instagram.com/cooprincipia",
     description: "cooprincipia",
   },
   {
     logo: logo3,
     title: "TIKTOK",
+    url: "https://www.tiktok.com/@cooprincipia?is_from_webapp=1&sender_device=pc",
     description: "cooprincipia",
   },
   {
     logo: logo4,
     title: "X",
+    url: "https://x.com/cooprincipia?s=11&t=T4y1diKz2Vfgad3nJRHv5g",
     description: "cooprincipia",
   },
   {
     logo: logo5,
     title: "YOUTUBE",
+    url: "https://www.youtube.com/@cooprincipia",
     description: "cooprincipia",
   },
 ];
 
 function EightSection() {
+  const [copyMessage, setCopyMessage] = useState("");
+
+  async function copyEmail() {
+    try {
+      await navigator.clipboard.writeText(valors[0].description);
+      setCopyMessage("Adreça de correu copiada!");
+    } catch {
+      setCopyMessage("No s'ha pogut copiar el correu. Torna-ho a provar.");
+    }
+  }
+
   return (
     <div className="eighth-section">
       <div className="eighth-section-wrapper">
@@ -47,8 +63,16 @@ function EightSection() {
           </div>
         </div>
         <div className="eighth-section-contact-wrapper">
-          {valors.map((valor, index) => (
-            <div key={index} className="eighth-section-contact-item">
+          {valors.map((valor, index) => {
+            const Contact = valor.url ? "a" : "button";
+            return (
+            <Contact
+              key={index}
+              className="eighth-section-contact-item"
+              {...(valor.url
+                ? { href: valor.url, target: "_blank", rel: "noopener noreferrer" }
+                : { type: "button", onClick: copyEmail, "aria-label": "Copia l'adreça de correu" })}
+            >
               <div className="eighth-section-contact-logo-wrapper">
                 <img src={valor.logo} alt={valor.title} />
               </div>
@@ -60,8 +84,10 @@ function EightSection() {
                   {valor.description}
                 </div>
               </div>
-            </div>
-          ))}
+            </Contact>
+            );
+          })}
+          <div role="status" aria-live="polite">{copyMessage}</div>
         </div>
       </div>
     </div>

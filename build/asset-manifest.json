@@ -1,0 +1,32 @@
+{
+  "files": {
+    "main.css": "/static/css/main.e110eb14.css",
+    "main.js": "/static/js/main.9f0998fc.js",
+    "static/js/453.08e23ff9.chunk.js": "/static/js/453.08e23ff9.chunk.js",
+    "static/media/logo_principia.png": "/static/media/logo_principia.cfbef29f08f37df4f9d4.png",
+    "static/media/logo_demarquia.png": "/static/media/logo_demarquia.fdb2161a53f3099817b8.png",
+    "static/media/logo_curia.png": "/static/media/logo_curia.85541e49be33264b7650.png",
+    "static/media/frame_22.png": "/static/media/frame_22.85a855db2db4efdc5b53.png",
+    "static/media/cvcat.pdf": "/static/media/cvcat.e21449fc527b48db2ba4.pdf",
+    "static/media/intro.png": "/static/media/intro.c95b383133cadc30e3b8.png",
+    "static/media/motivacio.png": "/static/media/motivacio.521ba194ca01ee6db626.png",
+    "static/media/ubicacionmaps.png": "/static/media/ubicacionmaps.c9d7a8f957df391a73c4.png",
+    "static/media/upfsolidaria.png": "/static/media/upfsolidaria.a2478bd6176ee63c9e55.png",
+    "static/media/frame_44.png": "/static/media/frame_44.e3e210dfec13c0142041.png",
+    "static/media/coopolis.png": "/static/media/coopolis.eee865bce2d0e149fbf1.png",
+    "static/media/bloc4.png": "/static/media/bloc4.dc1c35232242f32503b0.png",
+    "static/media/bcn.png": "/static/media/bcn.f6b122b8f073d7ab27d1.png",
+    "static/media/logo_37.png": "/static/media/logo_37.cfd2416ad5852cb5c57f.png",
+    "static/media/logo_36.png": "/static/media/logo_36.a10fe9e2560f0b440038.png",
+    "static/media/imatge_laia.png": "/static/media/imatge_laia.cf772f93a99b77b667d8.png",
+    "static/media/imatge_pau.png": "/static/media/imatge_pau.d495997e3a9c6c9262a0.png",
+    "index.html": "/index.html",
+    "main.e110eb14.css.map": "/static/css/main.e110eb14.css.map",
+    "main.9f0998fc.js.map": "/static/js/main.9f0998fc.js.map",
+    "453.08e23ff9.chunk.js.map": "/static/js/453.08e23ff9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e110eb14.css",
+    "static/js/main.9f0998fc.js"
+  ]
+}

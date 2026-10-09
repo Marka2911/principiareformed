@@ -1,9 +1,15 @@
+import { useEffect, useRef, useState } from "react";
 import logo_principia from "./assets/logo_principia_white.png";
 import { FiHeart } from "react-icons/fi";
 import ButtonTemplate from "./components/ButtonTemplate.js";
 import "./Footer.css";
 import { Link } from "react-router-dom";
 function Footer() {
+  const [emailCopied, setEmailCopied] = useState(false);
+  const tooltipTimeout = useRef(null);
+
+  useEffect(() => () => clearTimeout(tooltipTimeout.current), []);
+
   return (
     <footer className="footer">
       <div className="footer-wrapper">
@@ -64,9 +70,26 @@ function Footer() {
               </Link>
             </div>
           </div>
-          <div className="footer-info-section">
+          <div
+            className="footer-info-section footer-contact-section"
+            onClick={async () => {
+              try {
+                await navigator.clipboard.writeText("principia.coop@gmail.com");
+                setEmailCopied(true);
+                clearTimeout(tooltipTimeout.current);
+                tooltipTimeout.current = setTimeout(() => setEmailCopied(false), 2000);
+              } catch (error) {
+                console.error("Failed to copy email to clipboard", error);
+              }
+            }}
+          >
             <div className="footer-section-title">CONTACTE</div>
             <div className="footer-section-text">principia.coop@gmail.com</div>
+            {emailCopied && (
+              <span className="footer-copy-tooltip" role="status">
+                Email copiat!
+              </span>
+            )}
           </div>
         </div>
         <div className="footer-copyright">

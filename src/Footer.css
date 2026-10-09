@@ -70,3 +70,23 @@
 Link{
   text-decoration: none;
 }
+
+.footer-contact-section {
+  position: relative;
+  cursor: pointer;
+}
+
+.footer-copy-tooltip {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 8px;
+  padding: 6px 10px;
+  border-radius: 4px;
+  background-color: var(--surface-color);
+  color: var(--primarydark-color);
+  font-size: 12px;
+  white-space: nowrap;
+  pointer-events: none;
+}

@@ -5,6 +5,7 @@
   gap: 2rem;
   padding: 1rem;
   align-items: center;
+  justify-content: space-between;
 }
 .trajectoria-template-info {
   display: flex;
