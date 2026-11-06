@@ -52,7 +52,7 @@ function EightSection() {
   return (
     <div className="eighth-section">
       <div className="eighth-section-wrapper">
-        <div className="eighth-section-text-wrapper">
+        <div className="eighth-section-text-wrapper" data-reveal>
           <div className="eighth-section-text-title">CONTACTE</div>
           <div className="eighth-section-text-subtitle">
             Vols col·laborar o saber-ne més?
@@ -62,7 +62,7 @@ function EightSection() {
             contacta'ns via correu electrònic o a les nostres xarxes socials.
           </div>
         </div>
-        <div className="eighth-section-contact-wrapper">
+        <div className="eighth-section-contact-wrapper" data-reveal="fade" data-reveal-delay="70">
           {valors.map((valor, index) => {
             const Contact = valor.url ? "a" : "button";
             return (

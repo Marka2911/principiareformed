@@ -40,13 +40,15 @@ export default function CvTemplate({ members = [] }) {
           <p>Posicions clau dins l'equip impulsor amb rols, responsabilitats i accés al perfil complet.</p>
           <div className="cv-team-tree">
             {members.map((item, index) => (
-              <article className={`cv-member-card cv-member-position-${index} ${member.id === item.id ? "cv-member-selected" : ""}`} key={item.id}>
+              <article className={`cv-member-card cv-member-position-${index} ${member.id === item.id ? "cv-member-selected" : ""}`} key={item.id} data-reveal="fade" data-reveal-delay={(index % 2) * 70}>
                 <div className="cv-person-heading">
                   <Portrait member={item} />
                   <div><h3>{item.name}</h3><p>{item.role}</p></div>
                 </div>
                 <p>{item.summary}</p>
-                <button type="button" aria-pressed={member.id === item.id} aria-controls={profileId} onClick={() => setSelectedId(item.id)}>
+                <button type="button" aria-pressed={member.id === item.id} aria-controls={profileId} onClick={() => {
+                  if (member.id !== item.id) setSelectedId(item.id);
+                }}>
                   Saber més…<span className="cv-sr-only"> sobre {item.name}</span>
                 </button>
               </article>
@@ -55,36 +57,38 @@ export default function CvTemplate({ members = [] }) {
           <p className="cv-team-note">La jerarquia indica responsabilitats principals i l'espai de coordinació entre equips tècnics, de disseny i de polítiques.</p>
         </div>
 
-        <aside className="cv-profile" aria-label={`Currículum de ${member.name}`}>
-          <div className="cv-person-heading">
-            <Portrait member={member} />
-            <div><h2>{member.name}</h2><p>{member.role}</p></div>
-          </div>
-          <TimelineSection title="1. Experiència laboral" entries={member.experience} />
-          <TimelineSection title="2. Estudis" entries={member.education} />
-          {!member.experience?.length && !member.education?.length && <p>El currículum complet encara no està disponible.</p>}
-          <div className="cv-actions">
-            <a className="cv-outline-button" href={`#${profileId}`}>Veure trajectòria completa</a>
-            {member.cvUrl && <a className="cv-download-button" href={member.cvUrl} download>Descarregar CV</a>}
+        <aside className="cv-profile" aria-label={`Currículum de ${member.name}`} data-reveal="fade" data-reveal-delay="140">
+          <div key={member.id} className={`cv-profile-content${selectedId ? " cv-profile-updated" : ""}`}>
+            <div className="cv-person-heading">
+              <Portrait member={member} />
+              <div><h2>{member.name}</h2><p>{member.role}</p></div>
+            </div>
+            <TimelineSection title="1. Experiència laboral" entries={member.experience} />
+            <TimelineSection title="2. Estudis" entries={member.education} />
+            {!member.experience?.length && !member.education?.length && <p>El currículum complet encara no està disponible.</p>}
+            <div className="cv-actions">
+              <a className="cv-outline-button" href={`#${profileId}`}>Veure trajectòria completa</a>
+              {member.cvUrl && <a className="cv-download-button" href={member.cvUrl} download>Descarregar CV</a>}
+            </div>
           </div>
         </aside>
 
         <div className="cv-details" id={profileId} aria-label={`Perfil complet de ${member.name}`}>
-          <section className="cv-detail-section">
+          <section className="cv-detail-section" data-reveal="fade">
             <h2>Descripció</h2>
             {(member.description?.length ? member.description : [member.summary]).map((paragraph, index) => <p key={index}>{paragraph}</p>)}
           </section>
-          {!!member.publications?.length && <section className="cv-detail-section">
+          {!!member.publications?.length && <section className="cv-detail-section" data-reveal="fade">
             <h2>Publicacions</h2>
             <ul className="cv-publications">{member.publications.map((publication, index) => <li key={index}>
               <span aria-hidden="true">♧ </span>{publication.url ? <a href={publication.url}>{publication.title}</a> : publication.title}
             </li>)}</ul>
           </section>}
-          {!!member.languages?.length && <section className="cv-detail-section">
+          {!!member.languages?.length && <section className="cv-detail-section" data-reveal="fade">
             <h2>Idiomes</h2>
             <dl className="cv-languages">{member.languages.map((language) => <div key={language.name}><dt>{language.name}</dt><dd>{language.level}</dd></div>)}</dl>
           </section>}
-          {!!member.skills?.length && <section className="cv-detail-section">
+          {!!member.skills?.length && <section className="cv-detail-section" data-reveal="fade">
             <h2>Capacitats</h2>
             <div className="cv-skills">{member.skills.map((group) => <div key={group.title}><h3>{group.title}</h3><ul>{group.items.map((skill) => <li key={skill}>{skill}</li>)}</ul></div>)}</div>
           </section>}

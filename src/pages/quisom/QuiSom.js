@@ -10,10 +10,10 @@ function QuiSom() {
         backgroundColor="var(--surface-color)"
       />
       <div className="qui-som-content">
-        <div className="qui-som-content-title">
+        <div className="qui-som-content-title" data-reveal>
           No denunciem mancances: oferim solucions.
         </div>
-        <div className="qui-som-content-description">
+        <div className="qui-som-content-description" data-reveal="fade">
           <p>
             Creiem que el sector públic ha de ser el garant d'aquests valors,
             però sabem que sovint no ho és. Per això, des de la nostra

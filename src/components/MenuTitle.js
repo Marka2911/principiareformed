@@ -17,7 +17,7 @@ const MenuTitle = ({
 }) => {
   return (
     <div className="menu-title" style={{ backgroundColor }}>
-      <div className="menu-title-wrapper">
+      <div className="menu-title-wrapper" data-reveal>
         <div className="menu-title-title">{title}</div>
         <div className="menu-title-subtitle">{subtitle}</div>
         <div className="menu-title-description">{description}</div>

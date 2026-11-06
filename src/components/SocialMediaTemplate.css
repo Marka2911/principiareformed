@@ -21,10 +21,43 @@
     padding: 0.2rem 1rem 0.2rem 1rem;
     border-radius: 15px;
     color: var(--background-color);
+    cursor: pointer;
+    transition: transform var(--motion-duration-fast) var(--motion-ease-feedback);
 }
 
 .contacte-email-title-small-icon {
   font-size: var(--menu-content-title-font-size);
   font-weight: var(--third-section-projects-title-font-weight);
   color: var(--titles-color);
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .sm-button-open-style:not(:disabled):hover {
+    transform: translateY(-1px);
+  }
+}
+
+.sm-button-open-style:focus-visible {
+  outline: 2px solid var(--primary-color);
+  outline-offset: 3px;
+}
+
+.sm-button-open-style:not(:disabled):active {
+  transform: none;
+  transition-duration: 0s;
+}
+
+.sm-button-open-style:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+  transform: none;
+  transition: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .sm-button-open-style,
+  .sm-button-open-style:not(:disabled):hover {
+    transform: none;
+    transition: none;
+  }
 }

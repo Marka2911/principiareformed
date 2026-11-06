@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 function SecondSection() {
   return (
     <div className="second-section">
-      <div className="second-section-wrapper">
+      <div className="second-section-wrapper" data-reveal>
         <div className="second-section-text-wrapper">
           <div className="second-section-text-title">QUI SOM?</div>
           <div className="second-section-text-subtitle">
@@ -17,7 +17,7 @@ function SecondSection() {
             defensar: justícia social, transparència, inclusió, sostenibilitat,
             compromís comunitari…
           </div>
-          <Link key="qui-som" to="/qui-som" className="second-section-text-title">Coneix-nos a fons → </Link>
+          <Link key="qui-som" to="/qui-som" className="second-section-text-title motion-link">Coneix-nos a fons → </Link>
         </div>
         <div className="second-section-image-wrapper">
           <img

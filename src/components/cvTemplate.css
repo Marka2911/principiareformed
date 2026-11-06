@@ -118,6 +118,14 @@
   outline: 3px solid var(--primary-color);
   outline-offset: 3px;
 }
+.cv-member-card button:hover,
+.cv-actions a:hover {
+  box-shadow: 0 3px 10px rgba(8, 62, 70, 0.15);
+}
+.cv-member-card button:active,
+.cv-actions a:active {
+  box-shadow: none;
+}
 .cv-team-note {
   font-size: 0.8rem;
   text-align: center;
@@ -281,5 +289,25 @@
   }
   .cv-profile {
     padding: 1rem;
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .cv-member-card {
+    transition: background-color var(--motion-duration-fast) var(--motion-ease-feedback);
+  }
+  .cv-member-card button,
+  .cv-actions a {
+    transition: box-shadow var(--motion-duration-fast) var(--motion-ease-feedback);
+  }
+  .cv-profile-updated {
+    animation: cv-profile-update var(--motion-duration-fast) var(--motion-ease-feedback);
+  }
+  .cv-profile[data-reveal-state="active"] .cv-profile-updated {
+    animation: none;
+  }
+  @keyframes cv-profile-update {
+    from { opacity: 0; }
+    to { opacity: 1; }
   }
 }

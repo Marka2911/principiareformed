@@ -54,7 +54,7 @@ const ProjectesTemplate = ({
 
   const renderProjectBox = (isPopup = false) => {
     return (
-      <div className={`projectes-box ${isPopup ? "projectes-box-popup" : ""}`}>
+      <div className={`projectes-box ${isPopup ? "projectes-box-popup" : ""}`} data-reveal={isPopup ? undefined : "fade"}>
         <div className="projectes-box-image-wrapper">
           <img src={boxLogo} alt="Logo" />
         </div>
@@ -225,9 +225,9 @@ const ProjectesTemplate = ({
   return (
     <>
       <div className="projectes-template" style={{ backgroundColor }}>
-        <div className="projectes-title">Projectes {title}</div>
+        <div className="projectes-title" data-reveal>Projectes {title}</div>
 
-        <div className="projectes-subtitle">{subtitle}</div>
+        <div className="projectes-subtitle" data-reveal="fade" data-reveal-delay="70">{subtitle}</div>
 
         {renderProjectBox()}
       </div>

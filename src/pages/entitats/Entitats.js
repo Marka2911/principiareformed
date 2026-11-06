@@ -33,6 +33,7 @@ function Entitats() {
         />
         <EntitatsTemplate
           logo1={upf}
+          revealDelay={70}
           title={"UPF Solidària"}
           subtitle={"Prova pilot de Demarquia"}
           description={
@@ -41,6 +42,7 @@ function Entitats() {
         />
         <EntitatsTemplate
           logo1={communia}
+          revealDelay={140}
           title={"Communia"}
           subtitle={"Suport tècnic i cooperatiu en àmbits informàtics"}
           description={
@@ -57,6 +59,7 @@ function Entitats() {
         />
         <EntitatsTemplate
           logo1={bcn}
+          revealDelay={70}
           title={"Ajuntament de Barcelona"}
           subtitle={"Ajut ENFORTIM"}
           description={

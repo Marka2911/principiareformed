@@ -72,6 +72,15 @@ function Footer() {
           </div>
           <div
             className="footer-info-section footer-contact-section"
+            role="button"
+            tabIndex={0}
+            aria-label="Copia el correu electrònic principia.coop@gmail.com"
+            onKeyDown={(event) => {
+              if (event.key === "Enter" || event.key === " ") {
+                event.preventDefault();
+                event.currentTarget.click();
+              }
+            }}
             onClick={async () => {
               try {
                 await navigator.clipboard.writeText("principia.coop@gmail.com");

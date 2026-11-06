@@ -1,5 +1,5 @@
 function ErrorPage() {
-    return ( <div>
+    return ( <div data-reveal="fade">
         "No existeix"
     </div> );
 }

@@ -2,7 +2,7 @@ import "./LlibreComponent.css";
 import ProjectesButton from "./ProjectesButton";
 const LlibreComponent = ({ title, subtitle, description }) => {
   return (
-    <div className="llibre-component-wrapper">
+    <div className="llibre-component-wrapper" data-reveal>
       <div className="llibre-title">{title}</div>
       <div className="llibre-info">{subtitle}</div>
       <div className="llibre-info">{description}</div>

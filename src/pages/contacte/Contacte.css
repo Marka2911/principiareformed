@@ -109,3 +109,29 @@
         flex-direction: column;
     }
 }
+
+.other-info-button-wrapper:hover {
+    box-shadow: 0 3px 10px rgba(8, 62, 70, 0.12);
+}
+.other-info-button-wrapper:active {
+    box-shadow: none;
+}
+.other-info-button-wrapper:focus-visible,
+.forumlari-template-input:focus-visible,
+.forumlari-template-input-message:focus-visible {
+    outline: 2px solid var(--primary-color);
+    outline-offset: 3px;
+}
+@media (prefers-reduced-motion: no-preference) {
+    .other-info-button-wrapper {
+        transition: box-shadow var(--motion-duration-fast) var(--motion-ease-feedback);
+    }
+    .forumlari-template-input,
+    .forumlari-template-input-message {
+        transition: box-shadow var(--motion-duration-fast) var(--motion-ease-feedback);
+    }
+    .forumlari-template-input:focus,
+    .forumlari-template-input-message:focus {
+        box-shadow: 0 0 0 3px rgba(8, 62, 70, 0.08);
+    }
+}

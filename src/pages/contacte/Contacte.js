@@ -19,12 +19,12 @@ function Contacte() {
       />
       <div className="contacte-info-wrapper">
         <div className="contacte-info-email">
-          <div className="contacte-email-title">Contacta amb Principia</div>
-          <div className="llibre-info">
+          <div className="contacte-email-title" data-reveal>Contacta amb Principia</div>
+          <div className="llibre-info" data-reveal="fade" data-reveal-delay="70">
             Ens interessa escoltar iniciatives, col·laboracions i consultes
             tècniques. Omple el formulari i et respondrem.
           </div>
-          <div className="contacte-email-formulari-wrapper">
+          <div className="contacte-email-formulari-wrapper" data-reveal="fade">
             <div className="contacte-email-formulari">
               <div className="formulari-template">
                 <div className="formulari-template-text">Nom complet</div>
@@ -84,7 +84,7 @@ function Contacte() {
             />
             <Line></Line>
           </div>
-          <div className="contacte-email-title-small">
+          <div className="contacte-email-title-small" data-reveal>
             Altres formes de contacte
           </div>
           <div className="llibre-info">
@@ -92,21 +92,21 @@ function Contacte() {
           </div>
         </div>
         <div className="contacte-info-other-info">
-          <div className="other-info-wrapper">
+          <div className="other-info-wrapper" data-reveal="fade" data-reveal-delay="70">
             <div className="contacte-email-title-small">Ubicació</div>
             <div className="llibre-info">
               Adreça: Sant Adrìa Bosc 1, 08002, Barcelona
             </div>
             <div className="other-info-img">
-              <img src={ubi} />
+              <img src={ubi} alt="Ubicació de Principia" />
             </div>
           </div>
-          <div className="other-info-wrapper">
+          <div className="other-info-wrapper" data-reveal="fade">
             <div className="contacte-email-title-small">Adreça electrònica</div>
             <div className="llibre-info">principia.coop@gmail.com</div>
             <div className="other-info-img"></div>
           </div>
-          <div className="other-info-wrapper">
+          <div className="other-info-wrapper" data-reveal="fade">
             <div className="contacte-email-title-small">Segueix-nos</div>
             <div className="llibre-info">
               Troba'ns a totes les xarxes com cooprincipia

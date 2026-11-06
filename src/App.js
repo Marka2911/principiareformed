@@ -1,4 +1,6 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { useLayoutEffect, useRef } from "react";
+import { BrowserRouter, Routes, Route, useLocation, useNavigationType } from "react-router-dom";
+import useScrollReveal from "./hooks/useScrollReveal";
 
 import Trajectoria from "./pages/trajectoria/Trajectoria.js";
 import QuiSom from "./pages/quisom/QuiSom.js";
@@ -11,10 +13,23 @@ import Header from "./Header";
 import Footer from "./Footer";
 import Projectes from "./pages/projectes/Projectes.js";
 import ErrorPage from "./pages/errorpage/ErrorPage.js";
-function App() {
+function SiteLayout() {
+    const scopeRef = useRef(null);
+    const location = useLocation();
+    const navigationType = useNavigationType();
+    const previousPath = useRef(location.pathname);
+
+    useLayoutEffect(() => {
+        if (previousPath.current !== location.pathname && navigationType !== "POP" && !location.hash) {
+            window.scrollTo(0, 0);
+        }
+        previousPath.current = location.pathname;
+    }, [location.pathname, location.hash, navigationType]);
+
+    useScrollReveal(scopeRef, location.key);
+
     return (
-        <BrowserRouter>
-            <div>
+            <div ref={scopeRef}>
                 <Header/>
                 <Routes>
                     <Route path="/" element={<Main />} />
@@ -29,8 +44,11 @@ function App() {
                 </Routes>
                 <Footer/>
             </div>
-        </BrowserRouter>
     );
+}
+
+function App() {
+    return <BrowserRouter><SiteLayout /></BrowserRouter>;
 }
 
 export default App;

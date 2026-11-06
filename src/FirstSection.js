@@ -6,7 +6,7 @@ function FirstSections() {
   return (
     <div className="first-section">
       <div className="first-section-wrapper">
-        <div className="first-section-text-wrapper">
+        <div className="first-section-text-wrapper" data-reveal>
           <div className="first-section-text-title">PRINCIPIA</div>
           <div className="first-section-text-subtitle">
             Donant veu a allò que tothom sent.
@@ -17,18 +17,16 @@ function FirstSections() {
             combinant recerca i participació per impulsar l’emancipació social.
           </div>
           <div className="first-section-text-buttons-wrapper">
-            <Link key="qui-som" to="/qui-som">
-              <ButtonTemplate text="Descobreix Principia" />
+            <Link key="qui-som" to="/qui-som" className="first-section-primary-link">
+              <ButtonTemplate text="Descobreix Principia" as="span" />
             </Link>
 
-            <button className="projectes-button">
-              <Link key="projectes" to="/projectes">
-                Veure Projectes →
-              </Link>
-            </button>
+            <Link key="projectes" className="projectes-button" to="/projectes">
+              Veure Projectes →
+            </Link>
           </div>
         </div>
-        <div className="first-section-image-wrapper">
+        <div className="first-section-image-wrapper" data-reveal="fade" data-reveal-delay="70">
           <img
             src={logo}
             alt="Principia Logo"

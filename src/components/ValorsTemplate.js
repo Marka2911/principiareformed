@@ -5,7 +5,7 @@ const ValorsTemplate = ({ valorsLogo, valorsTitle, valorsDescription, background
   return (
     <div className="valors-template">
       <div className="valors-template-wrapper">
-        <div className="valors-template-info">
+        <div className="valors-template-info" data-reveal>
           <div className="valors-template-upper">
             <div className="valors-template-logo">{valorsLogo}</div>
             <div className="valors-template-text">
@@ -20,7 +20,7 @@ const ValorsTemplate = ({ valorsLogo, valorsTitle, valorsDescription, background
           </div>
         </div>
 
-        <div className="valors-template-video">
+        <div className="valors-template-video" data-reveal="fade" data-reveal-delay="70">
           <div className="valors-template-video">
             <iframe
               src="https://www.youtube.com/embed/dQw4w9WgXcQ"

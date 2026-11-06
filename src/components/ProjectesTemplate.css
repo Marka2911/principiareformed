@@ -132,6 +132,16 @@
   border-radius: 10px;
   gap: 0.75rem;
 }
+.box-button-left:hover {
+  box-shadow: 0 4px 12px rgba(8, 62, 70, 0.12);
+}
+.box-button-left:active {
+  box-shadow: none;
+}
+.box-button-left:focus-visible {
+  outline: 2px solid var(--primary-color);
+  outline-offset: 4px;
+}
 
 .box-button-left-icon {
   display: flex;
@@ -222,6 +232,38 @@
 
   .projectes-popup-container {
     max-height: 95vh;
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .box-button-left {
+    transition: translate var(--motion-duration-fast) var(--motion-ease-feedback),
+      box-shadow var(--motion-duration-fast) var(--motion-ease-feedback);
+  }
+  .box-button-left:active {
+    translate: none;
+  }
+  .projectes-popup-overlay {
+    animation: projectes-popup-backdrop-in var(--motion-duration-fast) var(--motion-ease-feedback);
+  }
+  .projectes-popup-container {
+    animation: projectes-popup-panel-in var(--motion-duration-fast) var(--motion-ease-feedback);
+  }
+  @keyframes projectes-popup-backdrop-in {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  @keyframes projectes-popup-panel-in {
+    from { translate: 0 8px; }
+    to { translate: none; }
+  }
+}
+@media (prefers-reduced-motion: no-preference) and (hover: hover) and (pointer: fine) {
+  .box-button-left:hover {
+    translate: 0 -2px;
+  }
+  .box-button-left:active {
+    translate: none;
   }
 }
 @media (max-width: 768px) {

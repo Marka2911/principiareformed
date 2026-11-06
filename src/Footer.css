@@ -60,6 +60,40 @@
   color: var(--surface-color);
 }
 
+.footer-links-section-links a {
+  text-underline-offset: 3px;
+  transition: color var(--motion-duration-fast) var(--motion-ease-feedback);
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .footer-links-section-links a:hover {
+    color: var(--background-color);
+    text-decoration: underline;
+  }
+
+  .footer-contact-section:hover .footer-section-text {
+    text-decoration: underline;
+    text-underline-offset: 3px;
+  }
+}
+
+.footer-logo-section-title:focus-visible,
+.footer-links-section-links a:focus-visible,
+.footer-contact-section:focus-visible {
+  outline: 2px solid var(--primary-color);
+  outline-offset: 3px;
+  transition: none;
+}
+
+.footer-links-section-links a:focus-visible {
+  color: var(--background-color);
+  text-decoration: underline;
+}
+
+.footer-contact-section:active .footer-section-text {
+  opacity: 0.8;
+}
+
 .footer-copyright{
     display: flex;
     justify-content: center;
@@ -89,4 +123,20 @@ Link{
   font-size: 12px;
   white-space: nowrap;
   pointer-events: none;
+  animation: footer-tooltip-enter var(--motion-duration-fast) var(--motion-ease-feedback);
+}
+
+@keyframes footer-tooltip-enter {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .footer-links-section-links a {
+    transition: none;
+  }
+
+  .footer-copy-tooltip {
+    animation: none;
+  }
 }

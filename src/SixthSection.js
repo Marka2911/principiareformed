@@ -9,7 +9,7 @@ import logo_40 from "./assets/logo_40.png";
 function SixthSection() {
   return (
     <div className="sixth-section">
-      <div className="sixth-section-wrapper">
+      <div className="sixth-section-wrapper" data-reveal>
         <div className="second-section-text-wrapper">
           <div className="second-section-text-title">
             ENTITATS COL·LABORADORES
@@ -30,7 +30,7 @@ function SixthSection() {
             <img src={logo_39} alt=""/>
             <img src={logo_40} alt=""/>
           </div>
-          <Link key="entitats" to="/entitats" className="second-section-text-title">
+          <Link key="entitats" to="/entitats" className="second-section-text-title motion-link">
             Veure totes les entitats →
           </Link>
         </div>

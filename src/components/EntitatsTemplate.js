@@ -1,12 +1,12 @@
 import ButtonTemplate from "./ButtonTemplate";
 import { MdArrowOutward } from "react-icons/md";
 import "./EntitatsTemplate.css";
-const EntitatsTemplate = ({ logo1, logo2, title, subtitle, description }) => {
+const EntitatsTemplate = ({ logo1, logo2, title, subtitle, description, revealDelay = 0 }) => {
   return (
-    <div className="entitats-template-wrapper">
+    <div className="entitats-template-wrapper" data-reveal data-reveal-delay={revealDelay}>
       <div className="entitats-template-images">
-        <img src={logo1} />
-        <img src={logo2} />
+        <img src={logo1} alt={`Logotip de ${title}`} />
+        <img src={logo2} alt="" />
       </div>
       <div className="entitats-template-info">
         <div className="entitats-template-title">{title}</div>

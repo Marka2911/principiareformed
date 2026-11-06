@@ -1,7 +1,7 @@
 import ProjectesButton from "./ProjectesButton";
 import "./TrajectoriaTemplate.css"
 const TrajectoriaTemplate = ({title, description, img}) => {
-    return ( <div className="trajectoria-template">
+    return ( <div className="trajectoria-template" data-reveal>
         <div className="trajectoria-template-wrapper">
             <div className="trajectoria-template-info">
                 <div className="trajectoria-template-title">
@@ -13,7 +13,7 @@ const TrajectoriaTemplate = ({title, description, img}) => {
                 <ProjectesButton text={"Llegir més"} firstBg="var(--primarydark-color)" secondText={"Descarrega PDF"} secondBg={"transparent"} border={"1px solid var(--primary-color)"} secondTextColor={"var(--primary-color)"}/>
              </div>
             <div className="trajectoria-template-img">
-                <img src={img}/>
+                <img src={img} alt=""/>
             </div>
         </div>
     </div> );

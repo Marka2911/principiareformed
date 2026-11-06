@@ -30,7 +30,7 @@ function FifthSection() {
   return (
     <div className="fifth-section">
       <div className="fifth-section-wrapper">
-        <div className="fifth-section-text-wrapper">
+        <div className="fifth-section-text-wrapper" data-reveal>
           <div className="fifth-section-text-title">EQUIP IMPULSOR</div>
           <div className="fifth-section-text-subtitle">
             Les persones que impulsen el canvi.
@@ -42,8 +42,8 @@ function FifthSection() {
           </div>
         </div>
         <div className="fifth-section-projects-wrapper">
-          {teamMembers.map((member) => (
-            <div className="fifth-section-demarquia-wrapper" key={member.name}>
+          {teamMembers.map((member, index) => (
+            <div className="fifth-section-demarquia-wrapper" key={member.name} data-reveal data-reveal-delay={index * 70}>
               <div className="third-section-demarquia-first-wrapper">
                 <img
                   src={member.image}
@@ -67,7 +67,7 @@ function FifthSection() {
           ))}
         </div>
         <div className="third-section-footer">
-          <Link key={"equip"} to="/equip">Coneix l'equip complet →</Link>
+          <Link key={"equip"} to="/equip" className="motion-link">Coneix l'equip complet →</Link>
         </div>
       </div>
     </div>

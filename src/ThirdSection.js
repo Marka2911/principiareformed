@@ -5,7 +5,7 @@ import logoCuria from './assets/logo_curia.png';
 import { Link } from 'react-router-dom';
 function ThirdSection() {
     return (<div className="third-section">
-        <div className="third-section-wrapper">
+        <div className="third-section-wrapper" data-reveal>
             <div className="third-section-text-wrapper">
                 <div className="third-section-text-title">
                     Projectes
@@ -22,7 +22,7 @@ function ThirdSection() {
             </div>
         </div>
         <div className="third-section-projects-wrapper">
-            <div className="third-section-demarquia-wrapper">
+            <div className="third-section-demarquia-wrapper" data-reveal>
                 <div className="third-section-demarquia-first-wrapper">
                     <div className="third-section-demarquia-first-wrapper-text">
                         Participacio ciutadana
@@ -38,7 +38,7 @@ function ThirdSection() {
                     </div>
                 </div>
                 <div className="third-section-demarquia-third-wrapper">
-                    <Link key="projectes" to="projectes">
+                    <Link key="projectes" to="projectes" className="motion-link">
                         Saber més →
                     </Link>
                     <div>
@@ -46,7 +46,7 @@ function ThirdSection() {
                     </div>
                 </div>
             </div>
-            <div className="third-section-demarquia-wrapper">
+            <div className="third-section-demarquia-wrapper" data-reveal data-reveal-delay="70">
                 <div className="third-section-demarquia-first-wrapper">
                     <div className="third-section-demarquia-first-wrapper-text">
                         En desenvolupament
@@ -62,7 +62,7 @@ function ThirdSection() {
                     </div>
                 </div>
                 <div className="third-section-demarquia-third-wrapper">
-                    <Link key="projectes" to="projectes">
+                    <Link key="projectes" to="projectes" className="motion-link">
                         Saber més →
                     </Link>
                     <div>
@@ -72,7 +72,7 @@ function ThirdSection() {
             </div>
         </div>
         <div className="third-section-footer">
-            <Link key="projectes" to="/projectes">
+            <Link key="projectes" to="/projectes" className="motion-link">
                 Veure tots els projectes →
             </Link>
         </div>

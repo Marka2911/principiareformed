@@ -13,4 +13,37 @@
   padding: 1.25rem;
   border-radius: 10px;
   white-space: nowrap;
+  cursor: pointer;
+  transition: transform var(--motion-duration-fast) var(--motion-ease-feedback);
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .projectes-button-buttons:not(:disabled):hover {
+    transform: translateY(-1px);
+  }
+}
+
+.projectes-button-buttons:focus-visible {
+  outline: 2px solid var(--primary-color);
+  outline-offset: 3px;
+}
+
+.projectes-button-buttons:not(:disabled):active {
+  transform: none;
+  transition-duration: 0s;
+}
+
+.projectes-button-buttons:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+  transform: none;
+  transition: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .projectes-button-buttons,
+  .projectes-button-buttons:not(:disabled):hover {
+    transform: none;
+    transition: none;
+  }
 }

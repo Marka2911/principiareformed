@@ -22,7 +22,7 @@ function Valors() {
         backgroundColor="var(--surface-color)"
       />
       <div className="valors-section-2">
-        <div className="valors-section-2-info">
+        <div className="valors-section-2-info" data-reveal="fade">
           <div className="valors-info-title">Democràcia Participativa</div>
           <div className="valors-info-subtitle">
             {" "}
@@ -32,10 +32,10 @@ function Valors() {
             encantats d'escoltar i integrar la teva opinió.
           </div>
           <Link key={"contacte"} to="/contacte" className="valors-info-button">
-            <ButtonLightBlue text={"Escriu un suggeriment"} />
+            <ButtonLightBlue text={"Escriu un suggeriment"} as="span" />
           </Link>
         </div>
-        <div className="valors-section-2-button">
+        <div className="valors-section-2-button" data-reveal data-reveal-delay="70">
           <ButtonLightBlue
             text={"Descarrega PDF"}
             background={"var(--primarydark-color)"}

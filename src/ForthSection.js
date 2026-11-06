@@ -4,7 +4,7 @@ import Timeline from "./Timeline.js";
 function ForthSection() {
   return (
     <div className="forth-section">
-      <div className="forth-section-wrapper">
+      <div className="forth-section-wrapper" data-reveal>
         <div className="forth-section-text-wrapper">
           <div className="forth-section-text-title">TRAJECTÒRIA</div>
           <div className="forth-section-text-subtitle">
@@ -18,7 +18,7 @@ function ForthSection() {
             actua, estem preparats per assumir nosaltres mateixos les tasques
             que calen per construir un model més just i participatiu.
           </div>
-          <Link key="trajectoria" to="/trajectoria" className="forth-section-text-title">
+          <Link key="trajectoria" to="/trajectoria" className="forth-section-text-title motion-link">
             Veure la trajectòria completa →
           </Link>
         </div>

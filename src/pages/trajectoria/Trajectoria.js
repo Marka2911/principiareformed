@@ -25,7 +25,7 @@ function Trajectoria() {
       />
 
       <div className="trajectoria-wrapper">
-        <div className="trajectoria-title">Trajectoria</div>
+        <div className="trajectoria-title" data-reveal>Trajectoria</div>
 
         <div className="trajectoria-line-wrapper">
           {/* VERTICAL LINE + FIRST DOT */}
@@ -36,11 +36,11 @@ function Trajectoria() {
           <div className="trajectoria-info">
             {/* PRINCIPIA */}
             <div className="trajectoria-wrapper-title">
-              <div className="trajectoria-title-style">Principia</div>
+              <div className="trajectoria-title-style" data-reveal>Principia</div>
               <div className="trajectoria-see-more">Veure més...</div>
             </div>
 
-            <div className="trajectoria-subtitle">
+            <div className="trajectoria-subtitle" data-reveal="fade" data-reveal-delay="70">
               Història i valors de la cooperativa
             </div>
 
@@ -60,11 +60,11 @@ function Trajectoria() {
             <div className="trajectoria-wrapper-title trajectoria-section-dot">
               <div className="trajectoria-dot-secondary"></div>
 
-              <div className="trajectoria-title-style">Demarquia</div>
+              <div className="trajectoria-title-style" data-reveal>Demarquia</div>
               <div className="trajectoria-see-more">Veure més...</div>
             </div>
 
-            <div className="trajectoria-subtitle">
+            <div className="trajectoria-subtitle" data-reveal="fade" data-reveal-delay="70">
               La plataforma que posa la ciutadania a governar processos
               col·lectius.
             </div>
@@ -84,7 +84,7 @@ function Trajectoria() {
         </div>
       </div>
       <div className="publicacions-wrapper">
-        <div className="publicacions-wrapper-title">
+        <div className="publicacions-wrapper-title" data-reveal>
           <div className="trajectoria-title">Publicacions públiques</div>
           <div className="trajectoria-subtitle">Últimes publicacions</div>
         </div>
@@ -115,9 +115,9 @@ function Trajectoria() {
               />
             </div>
           </div>
-          <div className="publicaions-wrapper-llibres-publicacions">
+          <div className="publicaions-wrapper-llibres-publicacions" data-reveal="fade" data-reveal-delay="70">
             <div className="publicaions-img-wrapper">
-              <img src={motivacio}></img>
+              <img src={motivacio} alt="Reflexions: Una Utopia o un possible futur?"></img>
             </div>
             <div className="publicacions-all-info-wrapper">
               <div className="publicacions-title">

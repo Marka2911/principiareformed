@@ -56,7 +56,7 @@ function SeventhSection() {
   return (
     <div className="seventh-section">
       <div className="seventh-section-wrapper">
-        <div className="seventh-section-text-wrapper">
+        <div className="seventh-section-text-wrapper" data-reveal>
           <div className="seventh-section-text-title">ELS NOSTRES VALORS</div>
           <div className="seventh-section-text-subtitle">
             Allò en què creiem guia allò que construïm.{" "}
@@ -65,11 +65,11 @@ function SeventhSection() {
             Ens definim a partir de set grans conceptes que interpretem com els
             fonaments dels nostres valors:
           </div>
-          <Link key="valors" to="/valors" className="seventh-section-text-title">
+          <Link key="valors" to="/valors" className="seventh-section-text-title motion-link">
             Aprofundeix en els nostres valors →
           </Link>
         </div>
-        <div className="seventh-section-valors-wrapper">
+        <div className="seventh-section-valors-wrapper" data-reveal>
           {valors.map((valor) => (
             <div className="seventh-section-valors" key={valor.title}>
               <div className="seventh-section-left">
@@ -88,7 +88,7 @@ function SeventhSection() {
             </div>
           ))}
         </div>
-        <div className="seventh-section-valors-wrapper">
+        <div className="seventh-section-valors-wrapper" data-reveal data-reveal-delay="70">
           {valors2.map((valor) => (
             <div className="seventh-section-valors" key={valor.title}>
               <div className="seventh-section-left">
